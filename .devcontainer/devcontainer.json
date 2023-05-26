@@ -1,24 +1,24 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
   "features": {
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
   },
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "streamlit_app.py",
-        "requirements.txt"
+        "streamlit_app.py"
       ]
     }
   },
   "postCreateCommand": "pip3 install --user -r requirements.txt",
   "postAttachCommand": {
-    "server": "streamlit run streamlit_app.py"
+    "server": "streamlit run streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false"
   },
   "portsAttributes": {
     "8501": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
-  }
+  },
+  "forwardPorts": [8501]
 }
