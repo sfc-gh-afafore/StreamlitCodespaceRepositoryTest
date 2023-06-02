@@ -11,11 +11,11 @@
       ]
     },
     "vscode": {
-			"settings": {},
-			"extensions": [
-				"ms-python.python"
-			]
-		}
+      "settings": {},
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
   },
   "postCreateCommand": "pip3 install --user -r requirements.txt",
   "postAttachCommand": {
@@ -27,5 +27,7 @@
       "onAutoForward": "openPreview"
     }
   },
-  "forwardPorts": [8501]
+  "forwardPorts": [
+    8501
+  ]
 }
