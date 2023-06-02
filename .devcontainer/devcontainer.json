@@ -6,9 +6,16 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
+        "README.md",
         "streamlit_app.py"
       ]
-    }
+    },
+    "vscode": {
+			"settings": {},
+			"extensions": [
+				"ms-python.python"
+			]
+		}
   },
   "postCreateCommand": "pip3 install --user -r requirements.txt",
   "postAttachCommand": {
