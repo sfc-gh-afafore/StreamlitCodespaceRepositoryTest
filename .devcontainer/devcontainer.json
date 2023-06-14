@@ -1,7 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
   "features": {
-    "ghcr.io/devcontainers-contrib/features/coverage-py:2": {}
+    // Optional features for development - increase container boot time!
+    // "ghcr.io/devcontainers-contrib/features/coverage-py:2": {},
+    // "git": "latest",
+    // "github-cli": "latest"
   },
   "customizations": {
     "codespaces": {
@@ -13,7 +16,8 @@
     "vscode": {
       "settings": {},
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "ms-python.vscode-pylance"
       ]
     }
   },
