@@ -21,7 +21,7 @@
       ]
     }
   },
-  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "updateContentCommand": "pip3 install --user -r requirements.txt",
   "postAttachCommand": {
     "server": "streamlit run streamlit_app.py --server.enableCORS false --server.enableXsrfProtection false"
   },
