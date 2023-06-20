@@ -1,11 +1,5 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
-  "features": {
-    // Optional features for development - increase container boot time!
-    // "ghcr.io/devcontainers-contrib/features/coverage-py:2": {},
-    // "git": "latest",
-    // "github-cli": "latest"
-  },
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
   "customizations": {
     "codespaces": {
       "openFiles": [
